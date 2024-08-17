@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="IMG/favicon-32x32.png" sizes="32x32">
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
+        <script src="franco1.js" defer></script>
+        <title>Game (Scissor paper rock)</title>
+    </head>
+<body>
+      <video autoplay muted loop id="background-video">
+        <source src="video1.mp4" type="video/mp4">
+    </video>
+
+
+    <div class="container">
+        <div class="game-header">
+            <div class="game-logo">
+                <img src="IMG/logo.svg" alt="logo">
+            </div>
+            <div class="game-score">
+                <div class="score-title">score</div>
+                <div class="score-num"></div>
+                <span class="plus">+1</span>
+            </div>
+        </div>
+        <div class="game-dashboard">
+
+            <div class="step-one">
+                <div class="piece paper">
+                    <img src="IMG/icon-paper.svg" alt="paper">
+                </div>
+                <div class="piece scissor">
+                    <img src="IMG/icon-scissors.svg" alt="scissor">
+                </div>
+                <div class="piece rock">
+                    <img src="IMG/icon-rock.svg" alt="rock">
+                </div>
+            </div>
+
+            <div class="step-two">
+                <div class="user">
+                    <div class="selection"></div>
+                    <div class="title">You picked</div>
+                    <div class="winner-animation"><span></span><span></span><span></span></div>
+                </div>
+                <div class="house">
+                    <div class="selection"></div>
+                    <div class="title">The house picked</div>
+                    <div class="winner-animation"><span></span><span></span><span></span></div>
+                </div>
+                <div class="result">
+                    <div class="result-title"></div>
+                    <button class="play-again">Play again</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="rules">
+            <button>rules</button>
+            <div class="rules-background">
+                <div class="rules-card">
+                    <div class="card-head">
+                        <h4>reglas del juego</h4>
+                        <img class="close-rules-desktop" src="IMG/icon-close.svg" alt="close">
+                    </div>
+                    <img src="IMG/image-rules.svg" alt="rules">
+                    <img class="close-rules-mobile" src="IMG/icon-close.svg" alt="close">
+                </div>
+            </div>
+        </div> 
+
+        <div class="audios">
+            <audio id="win" src="audios/win.mp3" hidden></audio>
+            <audio id="lose" src="audios/lose.mp3" hidden></audio>
+            <audio id="draw" src="audios/draw.mp3" hidden></audio>
+            <audio id="chose" src="audios/click.mp3" hidden></audio>
+        </div>
+                
+ <script src="franco2.js" defer></script>
+    </div>
+
+</body>
+</html>
